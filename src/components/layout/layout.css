@@ -1,0 +1,14 @@
+/* Altura utilizada pelo header (logo + paddings internos); alinha recuo do hero na home */
+:root {
+  --site-header-h: clamp(52px, 3.85rem + 0.35vw, 66px);
+}
+
+/* Home: barra navega sobre o hero (imagem até ao topo da janela) */
+.site-shell--home .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+}

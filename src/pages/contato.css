@@ -1,0 +1,131 @@
+.contato__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+@media (max-width: 880px) {
+  .contato__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contato__direct {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.contato__direct li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.contato__direct a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contato__direct a:hover {
+  color: var(--gold);
+}
+
+.contato__icon {
+  flex-shrink: 0;
+  color: var(--muted);
+  display: inline-flex;
+  margin-top: 0.15rem;
+}
+
+.contato__mail {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.contato__panel {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 0.65rem 0.75rem;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+  border-color: rgba(228, 180, 50, 0.45);
+}
+
+.field-row {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 560px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contato__submit {
+  width: fit-content;
+  margin-top: 0.25rem;
+  border: 0;
+}
+
+.contato__fineprint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.contato__thanks h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.35rem;
+}
+
+.contato__thanks p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.55;
+}

@@ -1,0 +1,339 @@
+.case-detail-page {
+  --case-accent: #f5ab36;
+  --case-muted: #efefef;
+  background: #ffffff;
+  color: #000000;
+  overflow: hidden;
+}
+
+.case-detail__inner {
+  width: min(100%, 1060px);
+  margin: 0 auto;
+  padding-inline: var(--space-page);
+}
+
+.case-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: calc(var(--site-header-h, 64px) * -1);
+  min-height: clamp(430px, 50vw, 610px);
+  padding: calc(var(--site-header-h, 64px) + clamp(2.1rem, 5vw, 3.8rem))
+    var(--space-page) clamp(4.8rem, 9vw, 6.8rem);
+  display: flex;
+  align-items: center;
+  background: #240026;
+  color: #ffffff;
+  border-radius: 0 0 clamp(44px, 6vw, 74px) clamp(44px, 6vw, 74px);
+}
+
+.case-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(36, 0, 38, 0.7)),
+    radial-gradient(circle at 50% 42%, rgba(245, 171, 54, 0.1), transparent 48%);
+}
+
+.case-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.5;
+}
+
+.case-hero__bg img {
+  width: min(86vw, 780px);
+  height: auto;
+  filter: blur(8px);
+  transform: scale(1.08);
+}
+
+.case-hero__inner {
+  width: min(100%, 1060px);
+  margin: 0 auto;
+}
+
+.case-hero__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.72rem;
+  margin-bottom: clamp(2.8rem, 7vw, 5.4rem);
+  color: #ffffff;
+  font-size: 0.86rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.case-hero__back:hover {
+  color: #ffffff;
+}
+
+.case-hero__back-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.case-hero__copy {
+  text-align: center;
+}
+
+.case-hero h1 {
+  margin: 0;
+  font-family: Montserrat, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: clamp(2.35rem, 5vw, 4.25rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.02;
+}
+
+.case-hero p {
+  margin: 0.95rem auto 0;
+  max-width: 58ch;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(0.92rem, 0.7vw + 0.84rem, 1.08rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.case-project {
+  padding: clamp(4.4rem, 8.5vw, 6.2rem) 0 clamp(3.2rem, 6vw, 4.4rem);
+}
+
+.case-text-section {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.78fr) minmax(360px, 1.28fr);
+  gap: clamp(2.5rem, 8vw, 6.8rem);
+  align-items: start;
+}
+
+.case-text-section h2 {
+  margin: 0;
+  font-family: Montserrat, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: clamp(1.55rem, 2.1vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.case-text-section__body {
+  max-width: 60ch;
+}
+
+.case-text-section__body p {
+  margin: 0 0 1.1rem;
+  font-size: clamp(0.9rem, 0.38vw + 0.82rem, 1rem);
+  font-weight: 500;
+  line-height: 1.56;
+  color: #000000;
+}
+
+.case-text-section__body p:last-child {
+  margin-bottom: 0;
+}
+
+.case-image-block {
+  margin-top: clamp(3.4rem, 7vw, 5rem);
+}
+
+.case-image-block img {
+  width: 100%;
+  aspect-ratio: 2.16 / 1;
+  object-fit: cover;
+  border-radius: clamp(18px, 2.5vw, 30px);
+  background: #d9d9d9;
+}
+
+.case-dark {
+  padding: clamp(4.8rem, 8.5vw, 6.8rem) 0 clamp(4.8rem, 8.5vw, 6.8rem);
+  background: #000000;
+  color: #ffffff;
+}
+
+.case-text-section--dark h2,
+.case-text-section--dark .case-text-section__body p,
+.case-text-section--dark .case-text-section__body li,
+.case-text-section--dark .case-text-section__body h3 {
+  color: #ffffff;
+}
+
+.case-gallery {
+  width: 100vw;
+  margin: clamp(3.2rem, 6vw, 4.5rem) 0 clamp(3.2rem, 6vw, 4.5rem);
+  margin-left: calc((100vw - min(100vw, 1060px)) / -2);
+  padding-left: calc((100vw - min(100vw, 1060px)) / 2 + var(--space-page));
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(210px, 24vw, 330px);
+  gap: clamp(1rem, 2.3vw, 2rem);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+  scrollbar-width: none;
+}
+
+.case-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.case-gallery__item {
+  overflow: hidden;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.case-gallery__item img {
+  width: 100%;
+  aspect-ratio: 0.78 / 1;
+  object-fit: cover;
+  background: #181818;
+  display: block;
+}
+
+.case-gallery__item img.is-zoomed {
+  transform: scale(1.25);
+  transform-origin: center;
+}
+
+.case-solution {
+  align-items: start;
+}
+
+.case-solution h3 {
+  margin: clamp(1.4rem, 3vw, 2rem) 0 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.case-solution ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.case-solution li {
+  margin: 0 0 0.4rem;
+  font-size: clamp(0.88rem, 0.36vw + 0.8rem, 0.98rem);
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.case-result {
+  padding: clamp(4.3rem, 8vw, 6rem) 0 clamp(4.8rem, 8.5vw, 6.6rem);
+  background: #ffffff;
+}
+
+.case-related {
+  background: var(--case-muted);
+  padding: clamp(4.5rem, 8vw, 6.2rem) 0 clamp(4.7rem, 8.5vw, 6.5rem);
+}
+
+.case-related h2 {
+  margin: 0 0 clamp(2.5rem, 5vw, 3.9rem);
+  text-align: center;
+  font-family: Montserrat, "Plus Jakarta Sans", system-ui, sans-serif;
+  font-size: clamp(1.65rem, 2.2vw, 2.45rem);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.12;
+  color: #000000;
+}
+
+.case-related p {
+  margin: 0 0 1.15rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.case-related__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+.case-related__card {
+  color: #000000;
+  text-decoration: none;
+}
+
+.case-related__card:hover {
+  color: #000000;
+}
+
+.case-related__card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #000000;
+  border-radius: clamp(28px, 4vw, 42px);
+  transition: transform 0.18s ease;
+}
+
+.case-related__card:hover img {
+  transform: translateY(-3px);
+}
+
+.case-related__card span {
+  display: block;
+  margin-top: 0.82rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+@media (max-width: 780px) {
+  .case-text-section {
+    grid-template-columns: 1fr;
+    gap: clamp(1.4rem, 5vw, 2.4rem);
+  }
+
+  .case-text-section__body {
+    max-width: 100%;
+  }
+
+  .case-gallery {
+    grid-auto-columns: minmax(190px, 58vw);
+  }
+
+  .case-related__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .case-hero {
+    min-height: 390px;
+    border-radius: 0 0 36px 36px;
+    padding-bottom: clamp(3.8rem, 14vw, 5rem);
+  }
+
+  .case-hero__copy {
+    text-align: left;
+  }
+
+  .case-image-block img {
+    aspect-ratio: 1.35 / 1;
+    border-radius: 20px;
+  }
+
+  .case-gallery {
+    grid-auto-columns: minmax(170px, 72vw);
+  }
+
+  .case-related__grid {
+    grid-template-columns: 1fr;
+  }
+}
