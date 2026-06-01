@@ -1,0 +1,204 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "LINK comunicação — início" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation "Principal" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "A Empresa" [ref=e9] [cursor=pointer]:
+          - /url: /a-empresa
+        - link "Serviços" [ref=e10] [cursor=pointer]:
+          - /url: /servicos
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+      - link "Fale com a gente" [ref=e13] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - region "Destaque" [ref=e16]:
+        - generic [ref=e21]:
+          - heading "Criatividade que aproxima, estratégia que transforma." [level=1] [ref=e22]:
+            - generic [ref=e23]:
+              - text: Criatividade que
+              - text: aproxima,
+              - text: estratégia que
+              - text: transforma.
+          - paragraph [ref=e24]:
+            - text: 28 anos desenvolvendo soluções inovadoras
+            - text: em comunicação para gerar valor
+            - text: pro seu negócio.
+          - link "Conheça a Link" [ref=e25] [cursor=pointer]:
+            - /url: /a-empresa
+      - region "Comunicação não acontece em partes." [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: Visão integrada
+            - heading "Comunicação não acontece em partes." [level=2] [ref=e31]:
+              - text: Comunicação
+              - text: não acontece
+              - generic [ref=e32]: em partes.
+          - generic [ref=e33]:
+            - paragraph [ref=e34]:
+              - text: Uma entrevista, uma campanha interna, um conteúdo nas redes ou a fala de um porta-voz não existem separadamente.
+              - strong [ref=e35]: Tudo impacta a imagem da organização.
+            - paragraph [ref=e36]: Por isso, nosso trabalho é conectar essas frentes em uma estratégia única, que faça sentido para o momento e para os objetivos do cliente.
+      - region "frentes diferentes, um único objetivo." [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: Áreas de atuação
+            - generic [ref=e42]:
+              - heading "frentes diferentes, um único objetivo." [level=2] [ref=e43]:
+                - text: frentes diferentes,
+                - text: um único objetivo.
+              - generic [ref=e44]:
+                - button "Áreas de atuação anteriores" [ref=e45] [cursor=pointer]:
+                  - img [ref=e46]
+                - button "Próximas áreas de atuação" [ref=e48] [cursor=pointer]:
+                  - img [ref=e49]
+          - region "Áreas de atuação" [ref=e51]:
+            - generic [ref=e52]:
+              - link "Ver serviço de Assessoria de Imprensa" [ref=e53] [cursor=pointer]:
+                - /url: /servicos/assessoria-de-imprensa
+                - generic [ref=e55]:
+                  - text: Assessoria de
+                  - text: Imprensa
+              - link "Ver serviço de Comunicação Interna" [ref=e56] [cursor=pointer]:
+                - /url: /servicos/comunicacao-interna
+                - generic [ref=e58]:
+                  - text: Comunicação
+                  - text: Interna
+              - link "Ver serviço de Marketing de Influência" [ref=e59] [cursor=pointer]:
+                - /url: /servicos/marketing-de-influencia
+                - generic [ref=e61]:
+                  - text: Marketing de
+                  - text: Influência
+              - link "Ver serviço de Marketing de Conteúdo" [ref=e62] [cursor=pointer]:
+                - /url: /servicos/marketing-de-conteudo
+                - generic [ref=e64]:
+                  - text: Marketing de
+                  - text: Conteúdo
+              - link "Ver serviço de Media Training" [ref=e65] [cursor=pointer]:
+                - /url: /servicos/media-training
+                - generic [ref=e67]:
+                  - text: Media
+                  - text: Training
+      - region "Experiência estratégica com atuação prática" [ref=e68]:
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: Diferenciais
+            - heading "Experiência estratégica com atuação prática" [level=2] [ref=e73]: Experiência estratégica com atuação prática.
+            - list [ref=e74]:
+              - listitem [ref=e75]:
+                - img [ref=e77]
+                - generic [ref=e80]:
+                  - generic [ref=e81]: Imprensa como base
+                  - paragraph [ref=e82]: A relação com a mídia continua sendo uma das formas mais sólidas de construir reputação. É a partir dela que entendemos cenário, riscos e oportunidades.
+              - listitem [ref=e83]:
+                - img [ref=e85]
+                - generic [ref=e88]:
+                  - generic [ref=e89]: Integração real
+                  - paragraph [ref=e90]: Planejamos e executamos diferentes ações de comunicação de forma coordenada, evitando ruídos e contradições.
+              - listitem [ref=e91]:
+                - img [ref=e93]
+                - generic [ref=e95]:
+                  - generic [ref=e96]: Experiência de mercado
+                  - paragraph [ref=e97]: Já atuamos em projetos diversos, com desafios reais e contextos complexos.
+              - listitem [ref=e98]:
+                - img [ref=e100]
+                - generic [ref=e103]:
+                  - generic [ref=e104]: Confiança e consistência
+                  - paragraph [ref=e105]: Comunicação exige responsabilidade. Trabalhamos com seriedade, discrição e compromisso com resultados duradouros.
+          - generic [ref=e107]:
+            - generic:
+              - generic:
+                - img
+      - region "Experiência construída no dia a dia." [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111]:
+              - paragraph [ref=e112]: Cases
+              - heading "Experiência construída no dia a dia." [level=2] [ref=e114]
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: Cada projeto traz um contexto diferente. Nosso papel é entender o cenário, definir prioridades e executar ações que realmente façam diferença.
+              - link "Ver todos" [ref=e117] [cursor=pointer]:
+                - /url: /cases
+          - generic [ref=e118]:
+            - figure "Bamaq" [ref=e119]:
+              - link "Ver case Bamaq" [ref=e120] [cursor=pointer]:
+                - /url: /cases/grupo-bamaq
+              - generic [ref=e121]: Bamaq
+            - figure "BH Airport" [ref=e122]:
+              - link "Ver case BH Airport" [ref=e123] [cursor=pointer]:
+                - /url: /cases/bh-airport
+              - generic [ref=e124]: BH Airport
+            - figure "Galo Inox" [ref=e125]:
+              - link "Ver case Galo Inox" [ref=e126] [cursor=pointer]:
+                - /url: /cases/galo-inox
+              - generic [ref=e127]: Galo Inox
+            - figure "IMFG" [ref=e128]:
+              - link "Ver case IMFG" [ref=e129] [cursor=pointer]:
+                - /url: /cases/imfg
+              - generic [ref=e130]: IMFG
+      - region "Clientes e parceiros" [ref=e131]:
+        - generic [ref=e133]:
+          - 'img "Logótipos de clientes: ABRH MG, Aliança, Aperam, Assaí, Bamaq, Bem Brasil, Banco Acredita e BH Airport" [ref=e134]'
+          - img [ref=e135]
+      - generic [ref=e137]:
+        - heading "Quer conversar sobre os desafios de comunicação da sua organização?" [level=2] [ref=e138]:
+          - generic [ref=e139]: Quer conversar sobre os desafios de
+          - generic [ref=e140]: comunicação da sua organização?
+        - link "Entre em contato" [ref=e141] [cursor=pointer]:
+          - /url: /contato
+  - contentinfo [ref=e142]:
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - link "LINK comunicação" [ref=e145] [cursor=pointer]:
+          - /url: /
+          - img "LINK comunicação" [ref=e146]
+        - paragraph [ref=e147]: Siga nas redes sociais
+        - generic [ref=e148]:
+          - link "LinkedIn da LINK comunicação" [ref=e149] [cursor=pointer]:
+            - /url: https://www.linkedin.com/
+            - img [ref=e150]
+          - link "Instagram da LINK comunicação" [ref=e154] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+            - img [ref=e155]
+      - navigation "Empresa" [ref=e159]:
+        - heading "Empresa" [level=2] [ref=e160]
+        - list [ref=e161]:
+          - listitem [ref=e162]:
+            - link "Home" [ref=e163] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e164]:
+            - link "A Empresa" [ref=e165] [cursor=pointer]:
+              - /url: /a-empresa
+          - listitem [ref=e166]:
+            - link "Cases" [ref=e167] [cursor=pointer]:
+              - /url: /cases
+      - navigation "Serviços" [ref=e168]:
+        - heading "Serviços" [level=2] [ref=e169]
+        - list [ref=e170]:
+          - listitem [ref=e171]:
+            - link "Serviços" [ref=e172] [cursor=pointer]:
+              - /url: /servicos
+      - generic [ref=e173]:
+        - heading "Contato" [level=2] [ref=e174]
+        - paragraph [ref=e175]:
+          - link "Fale com a gente" [ref=e176] [cursor=pointer]:
+            - /url: /contato
+        - generic [ref=e177]:
+          - generic [ref=e178]:
+            - img [ref=e180]
+            - generic [ref=e183]:
+              - text: Rua Buenos Aires, 10 - 4º andar,
+              - text: São Pedro, Belo Horizonte - MG
+          - generic [ref=e184]:
+            - img [ref=e186]
+            - link "(31) 99840-0460" [ref=e188] [cursor=pointer]:
+              - /url: tel:+5531998400460
+          - generic [ref=e189]:
+            - img [ref=e191]
+            - link "recepcao@linkcomunicacao.com.br" [ref=e194] [cursor=pointer]:
+              - /url: mailto:recepcao@linkcomunicacao.com.br
+    - paragraph [ref=e196]: © 2026 LINK comunicação. Todos os direitos reservados.

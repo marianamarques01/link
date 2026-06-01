@@ -146,7 +146,6 @@ export const cases = {
         "+400% de publicações espontâneas",
         "+285% de publicações espontâneas",
         "+1000% de publicações espontâneas",
-        "9 publicações espontâneas",
         "+14 mil visualizações em 5 publicações do projeto 'Só notícia boa'",
         "Alinhamento visual e informacional para todos os públicos estratégicos",
         "Fortalecimento da reputação institucional no terceiro setor",

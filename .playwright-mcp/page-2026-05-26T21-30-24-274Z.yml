@@ -1,0 +1,193 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "LINK comunicação — início" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation "Principal" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "A Empresa" [ref=e9] [cursor=pointer]:
+          - /url: /a-empresa
+        - link "Serviços" [ref=e10] [cursor=pointer]:
+          - /url: /servicos
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+      - link "Fale com a gente" [ref=e13] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - region "Visão 360. Comunicação Integrada." [ref=e16]:
+        - generic [ref=e17]:
+          - heading "Visão 360. Comunicação Integrada." [level=1] [ref=e18]:
+            - generic [ref=e19]: Visão 360.
+            - generic [ref=e20]: Comunicação
+            - generic [ref=e21]: Integrada.
+          - generic [ref=e22]:
+            - img [ref=e23]
+            - paragraph [ref=e24]: Atuamos em diferentes frentes da comunicação que se complementam e se conectam para responder aos desafios específicos de cada empresa. Da relação com a mídia ao diálogo com os colaboradores e clientes, nosso trabalho é construir posicionamentos consistentes e duradouros.
+            - paragraph [ref=e25]: Desenvolvemos estratégias completas e acompanhamos sua implementação, ajustando rotas sempre que o cenário exige.
+      - generic [ref=e26]:
+        - region "Relacionamento com a mídia para construir reputação." [ref=e27]:
+          - generic [ref=e28]:
+            - article [ref=e29]:
+              - paragraph [ref=e30]: Assessoria de imprensa
+              - heading "Relacionamento com a mídia para construir reputação." [level=2] [ref=e32]
+              - generic [ref=e33]:
+                - paragraph [ref=e34]: Assessoria de imprensa vai além do envio de releases. É sobre identificar boas histórias, transformá-las em pautas relevantes e construir presença qualificada nos veículos certos.
+                - paragraph [ref=e35]: Da estratégia ao acompanhamento de cobertura, atuamos para posicionar marcas de forma consistente na esfera pública e fortalecer sua credibilidade.
+              - link "Saiba mais" [ref=e36] [cursor=pointer]:
+                - /url: /servicos/assessoria-de-imprensa
+            - complementary "Cases de Assessoria de imprensa" [ref=e37]:
+              - generic [ref=e38]:
+                - paragraph [ref=e39]: "Cases relacionados:"
+                - generic [ref=e40]:
+                  - button "Cases anteriores" [ref=e41] [cursor=pointer]:
+                    - img [ref=e42]
+                  - button "Próximos cases" [ref=e44] [cursor=pointer]:
+                    - img [ref=e45]
+              - generic [ref=e47]:
+                - figure "Bamaq" [ref=e48]:
+                  - generic [ref=e49]: Bamaq
+                - figure "IMFG" [ref=e50]:
+                  - generic [ref=e51]: IMFG
+        - region "Conexões internas que fortalecem cultura e resultado." [ref=e52]:
+          - generic [ref=e53]:
+            - article [ref=e54]:
+              - paragraph [ref=e55]: Comunicação interna
+              - heading "Conexões internas que fortalecem cultura e resultado." [level=2] [ref=e57]
+              - generic [ref=e58]:
+                - paragraph [ref=e59]: Uma cultura forte começa na forma como a empresa conversa com as pessoas que fazem o negócio acontecer. Comunicação interna é alinhamento, clareza e pertencimento.
+                - paragraph [ref=e60]: Criamos estratégias, campanhas e jornadas de engajamento que aproximam colaboradores do propósito e impulsionam resultados coletivos.
+              - link "Saiba mais" [ref=e61] [cursor=pointer]:
+                - /url: /servicos/comunicacao-interna
+            - complementary "Cases de Comunicação interna" [ref=e62]:
+              - generic [ref=e63]:
+                - paragraph [ref=e64]: "Cases relacionados:"
+                - generic [ref=e65]:
+                  - button "Cases anteriores" [ref=e66] [cursor=pointer]:
+                    - img [ref=e67]
+                  - button "Próximos cases" [ref=e69] [cursor=pointer]:
+                    - img [ref=e70]
+              - generic [ref=e72]:
+                - figure "Galo Inox" [ref=e73]:
+                  - generic [ref=e74]: Galo Inox
+                - figure "IMFG" [ref=e75]:
+                  - generic [ref=e76]: IMFG
+        - region "Conexões autênticas entre marcas, vozes e comunidades." [ref=e77]:
+          - generic [ref=e78]:
+            - article [ref=e79]:
+              - paragraph [ref=e80]: Marketing de influência
+              - heading "Conexões autênticas entre marcas, vozes e comunidades." [level=2] [ref=e82]
+              - generic [ref=e83]:
+                - paragraph [ref=e84]: Mais do que alcance, influência é sobre credibilidade. Construímos campanhas com creators e narrativas que geram identificação real com os públicos.
+                - paragraph [ref=e85]: Da seleção dos perfis à mensuração dos resultados, desenvolvemos ações que fortalecem reputação, relevância e conexão.
+              - link "Saiba mais" [ref=e86] [cursor=pointer]:
+                - /url: /servicos/marketing-de-influencia
+            - complementary "Cases de Marketing de influência" [ref=e87]:
+              - paragraph [ref=e89]: "Cases relacionados:"
+              - figure "Galo Inox" [ref=e91]:
+                - generic [ref=e92]: Galo Inox
+        - region "Conteúdo que posiciona, conecta e gera valor." [ref=e93]:
+          - generic [ref=e94]:
+            - article [ref=e95]:
+              - paragraph [ref=e96]: Marketing de conteúdo
+              - heading "Conteúdo que posiciona, conecta e gera valor." [level=2] [ref=e98]
+              - generic [ref=e99]:
+                - paragraph [ref=e100]: Presença digital não se sustenta apenas com frequência, mas com relevância. Criamos estratégias de conteúdo alinhadas aos objetivos da marca e à jornada do público.
+                - paragraph [ref=e101]: Com planejamento, storytelling e análise de performance, transformamos conteúdo em relacionamento e resultado.
+              - link "Saiba mais" [ref=e102] [cursor=pointer]:
+                - /url: /servicos/marketing-de-conteudo
+            - complementary "Cases de Marketing de conteúdo" [ref=e103]:
+              - generic [ref=e104]:
+                - paragraph [ref=e105]: "Cases relacionados:"
+                - generic [ref=e106]:
+                  - button "Cases anteriores" [ref=e107] [cursor=pointer]:
+                    - img [ref=e108]
+                  - button "Próximos cases" [ref=e110] [cursor=pointer]:
+                    - img [ref=e111]
+              - generic [ref=e113]:
+                - figure "Bamaq" [ref=e114]:
+                  - generic [ref=e115]: Bamaq
+                - figure "IMFG" [ref=e116]:
+                  - generic [ref=e117]: IMFG
+        - region "Porta-vozes preparados para falar com segurança e estratégia." [ref=e118]:
+          - generic [ref=e119]:
+            - article [ref=e120]:
+              - paragraph [ref=e121]: Media training
+              - heading "Porta-vozes preparados para falar com segurança e estratégia." [level=2] [ref=e123]
+              - generic [ref=e124]:
+                - paragraph [ref=e125]: Em um cenário de alta exposição, cada fala importa. O Media Training prepara lideranças para entrevistas, coletivas, apresentações e momentos de crise.
+                - paragraph [ref=e126]: Trabalhamos narrativa, postura, linguagem e mensagens-chave para transformar a exposição em autoridade e confiança.
+              - link "Saiba mais" [ref=e127] [cursor=pointer]:
+                - /url: /servicos/media-training
+            - complementary "Cases de Media training" [ref=e128]:
+              - generic [ref=e129]:
+                - paragraph [ref=e130]: "Cases relacionados:"
+                - generic [ref=e131]:
+                  - button "Cases anteriores" [ref=e132] [cursor=pointer]:
+                    - img [ref=e133]
+                  - button "Próximos cases" [ref=e135] [cursor=pointer]:
+                    - img [ref=e136]
+              - generic [ref=e138]:
+                - figure "Bamaq" [ref=e139]:
+                  - generic [ref=e140]: Bamaq
+                - figure "Galo Inox" [ref=e141]:
+                  - generic [ref=e142]: Galo Inox
+      - generic [ref=e144]:
+        - heading "Quer conversar sobre os desafios de comunicação da sua organização?" [level=2] [ref=e145]:
+          - generic [ref=e146]: Quer conversar sobre os desafios de
+          - generic [ref=e147]: comunicação da sua organização?
+        - link "Entre em contato" [ref=e148] [cursor=pointer]:
+          - /url: /contato
+  - contentinfo [ref=e149]:
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - link "LINK comunicação" [ref=e152] [cursor=pointer]:
+          - /url: /
+          - img "LINK comunicação" [ref=e153]
+        - paragraph [ref=e154]: Siga nas redes sociais
+        - generic [ref=e155]:
+          - link "LinkedIn da LINK comunicação" [ref=e156] [cursor=pointer]:
+            - /url: https://www.linkedin.com/
+            - img [ref=e157]
+          - link "Instagram da LINK comunicação" [ref=e161] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+            - img [ref=e162]
+      - navigation "Empresa" [ref=e166]:
+        - heading "Empresa" [level=2] [ref=e167]
+        - list [ref=e168]:
+          - listitem [ref=e169]:
+            - link "Home" [ref=e170] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e171]:
+            - link "A Empresa" [ref=e172] [cursor=pointer]:
+              - /url: /a-empresa
+          - listitem [ref=e173]:
+            - link "Cases" [ref=e174] [cursor=pointer]:
+              - /url: /cases
+      - navigation "Serviços" [ref=e175]:
+        - heading "Serviços" [level=2] [ref=e176]
+        - list [ref=e177]:
+          - listitem [ref=e178]:
+            - link "Serviços" [ref=e179] [cursor=pointer]:
+              - /url: /servicos
+      - generic [ref=e180]:
+        - heading "Contato" [level=2] [ref=e181]
+        - paragraph [ref=e182]:
+          - link "Fale com a gente" [ref=e183] [cursor=pointer]:
+            - /url: /contato
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - img [ref=e187]
+            - generic [ref=e190]:
+              - text: Rua Buenos Aires, 10 - 4º andar,
+              - text: São Pedro, Belo Horizonte - MG
+          - generic [ref=e191]:
+            - img [ref=e193]
+            - link "(31) 99840-0460" [ref=e195] [cursor=pointer]:
+              - /url: tel:+5531998400460
+          - generic [ref=e196]:
+            - img [ref=e198]
+            - link "recepcao@linkcomunicacao.com.br" [ref=e201] [cursor=pointer]:
+              - /url: mailto:recepcao@linkcomunicacao.com.br
+    - paragraph [ref=e203]: © 2026 LINK comunicação. Todos os direitos reservados.

@@ -8,6 +8,7 @@ const links = [
   { to: "/a-empresa", label: "A Empresa" },
   { to: "/servicos", label: "Serviços" },
   { to: "/cases", label: "Cases" },
+  { to: "/news", label: "News" },
 ] as const;
 
 export function Header() {
@@ -20,12 +21,12 @@ export function Header() {
   const isCaseDetail = pathname.startsWith("/cases/");
   const isCasesList = pathname === "/cases";
   const isContato = pathname === "/contato";
-  const usesMinimalHeader = isHome || isAbout || isServices || isCaseDetail || isCasesList || isContato;
+  const isNews = pathname === "/news";
+  const usesMinimalHeader =
+    isHome || isAbout || isServices || isCaseDetail || isCasesList || isContato || isNews;
 
   useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 12);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -38,47 +39,32 @@ export function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
   return (
     <header
-      className={`site-header${usesMinimalHeader ? " site-header--home-minimal" : ""}${
-        isAbout ? " site-header--about-hero" : ""
-      }${
-        isServices ? " site-header--services-hero" : ""
-      }${
-        isCaseDetail ? " site-header--case-hero" : ""
-      }${
-        isCasesList ? " site-header--cases-list" : ""
-      }${
-        isContato ? " site-header--services-hero" : ""
-      }${
-        scrolled ? " site-header--scrolled" : ""
-      }`}
+      className={[
+        "site-header",
+        usesMinimalHeader ? "site-header--home-minimal" : "",
+        isAbout ? "site-header--about-hero" : "",
+        isServices ? "site-header--services-hero" : "",
+        isCaseDetail ? "site-header--case-hero" : "",
+        isCasesList ? "site-header--cases-list" : "",
+        isContato || isNews ? "site-header--services-hero" : "",
+        scrolled ? "site-header--scrolled" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
       <div className="site-header__inner">
         <Link to="/" className="site-header__logo" aria-label="LINK comunicação — início">
           <img src={isCasesList ? "/logo/logo2.png" : "/logo/image.png"} alt="" width={148} height={100} />
         </Link>
 
-        <nav className="site-header__desktop-nav" aria-label="Principal">
-          {links.map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              className={({ isActive }) =>
-                `site-header__desktop-link ${isActive ? "site-header__desktop-link--active" : ""}`
-              }
-            >
-              {l.label}
-            </NavLink>
-          ))}
-        </nav>
-
         <div className="site-header__actions">
-          <Link
-            to="/contato"
-            className={`site-header__cta ${isHome ? "site-header__cta--home" : ""}`}
-          >
+          <Link to="/contato" className={`site-header__cta${isHome ? " site-header__cta--home" : ""}`}>
             Fale com a gente
           </Link>
 
@@ -90,9 +76,9 @@ export function Header() {
             onClick={() => setOpen((v) => !v)}
           >
             {open ? (
-              <X size={isHome ? 28 : 26} strokeWidth={isHome ? 2.15 : 1.75} aria-hidden />
+              <X size={26} strokeWidth={1.75} aria-hidden />
             ) : (
-              <Menu size={isHome ? 28 : 26} strokeWidth={isHome ? 2.15 : 1.75} aria-hidden />
+              <Menu size={26} strokeWidth={1.75} aria-hidden />
             )}
             <span className="visually-hidden">{open ? "Fechar menu" : "Abrir menu"}</span>
           </button>
@@ -100,7 +86,7 @@ export function Header() {
 
         <nav
           id="site-nav"
-          className={`site-header__nav ${open ? "site-header__nav--open" : ""}`}
+          className={`site-header__nav${open ? " site-header__nav--open" : ""}`}
           aria-label="Menu"
         >
           {links.map((l) => (
@@ -109,7 +95,7 @@ export function Header() {
               to={l.to}
               end={l.to === "/"}
               className={({ isActive }) =>
-                `site-header__link ${isActive ? "site-header__link--active" : ""}`
+                `site-header__link${isActive ? " site-header__link--active" : ""}`
               }
               onClick={() => setOpen(false)}
             >

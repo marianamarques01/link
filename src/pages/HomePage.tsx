@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useCallback, useRef, type KeyboardEvent } from "react";
-import { Check, ChevronRight, Copy, Newspaper, ShieldCheck, Star } from "lucide-react";
-import { HOME_IMAGES } from "../homeImagery";
+import { ChevronLeft, ChevronRight, Copy, Newspaper, ShieldCheck, Star } from "lucide-react";
+import { HOME_CLIENT_LOGOS, HOME_IMAGES } from "../homeImagery";
 import { serviceOverviews } from "../data/servicesData";
 import { FinalCTA } from "../components/services/FinalCTA";
 import "./home.css";
@@ -168,18 +168,28 @@ export function HomePage() {
             </p>
             <div className="home-services__title-row">
               <h2 id="home-services-title" className="home-services__title">
-                frentes diferentes,
+                Frentes diferentes,
                 <br />
                 um <span className="home-services__hl">único</span> objetivo.
               </h2>
-              <button
-                type="button"
-                className="home-services__arrow home-services__arrow--next"
-                aria-label="Próximas áreas de atuação"
-                onClick={() => scrollCarousel(1)}
-              >
-                <ChevronRight aria-hidden size={22} strokeWidth={2.25} />
-              </button>
+              <div className="home-services__arrows">
+                <button
+                  type="button"
+                  className="home-services__arrow home-services__arrow--prev"
+                  aria-label="Áreas de atuação anteriores"
+                  onClick={() => scrollCarousel(-1)}
+                >
+                  <ChevronLeft aria-hidden size={22} strokeWidth={2.25} />
+                </button>
+                <button
+                  type="button"
+                  className="home-services__arrow home-services__arrow--next"
+                  aria-label="Próximas áreas de atuação"
+                  onClick={() => scrollCarousel(1)}
+                >
+                  <ChevronRight aria-hidden size={22} strokeWidth={2.25} />
+                </button>
+              </div>
             </div>
           </header>
 
@@ -256,11 +266,6 @@ export function HomePage() {
           </div>
           <div className="home-values__media">
             <div className="home-values__media-frame">
-              <div className="home-values__media-deco" aria-hidden>
-                <span className="home-values__deco-ring">
-                  <Check className="home-values__deco-check" size={28} strokeWidth={2.5} />
-                </span>
-              </div>
               <img
                 className="home-values__photo"
                 src={HOME_IMAGES.heroOffice}
@@ -326,26 +331,28 @@ export function HomePage() {
       </section>
 
       <section className="home-partners" aria-label="Clientes e parceiros">
-        {/* <div className="home-partners__nav">
-          <div className="home-partners__nav-inner page__inner home-page__wide">
-            {HOME_CASES_ITEMS.map((item) => (
-              <Link key={item.anchor} className="home-partners__nav-link" to={`/cases/${item.slug}`}>
-                {item.label}
-              </Link>
+        <div className="home-partners__marquee-wrap">
+          <div className="home-partners__marquee">
+            {[0, 1].map((copy) => (
+              <ul
+                key={copy}
+                className="home-partners__track"
+                aria-hidden={copy === 1 ? true : undefined}
+              >
+                {HOME_CLIENT_LOGOS.map((src) => (
+                  <li key={`${copy}-${src}`} className="home-partners__item">
+                    <img
+                      className="home-partners__logo"
+                      src={src}
+                      alt=""
+                      decoding="async"
+                      loading="lazy"
+                      height={80}
+                    />
+                  </li>
+                ))}
+              </ul>
             ))}
-          </div>
-        </div> */}
-        <div className="home-partners__logos">
-          <div className="home-partners__logos-inner page__inner home-page__wide">
-            <img
-              className="home-partners__strip"
-              src={HOME_IMAGES.partnersStrip}
-              alt="Logótipos de clientes: ABRH MG, Aliança, Aperam, Assaí, Bamaq, Bem Brasil, Banco Acredita e BH Airport"
-              loading="lazy"
-              decoding="async"
-              width={1024}
-              height={92}
-            />
           </div>
         </div>
       </section>

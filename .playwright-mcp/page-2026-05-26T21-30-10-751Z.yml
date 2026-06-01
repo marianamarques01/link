@@ -1,0 +1,111 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "LINK comunicação — início" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation "Principal" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "A Empresa" [ref=e9] [cursor=pointer]:
+          - /url: /a-empresa
+        - link "Serviços" [ref=e10] [cursor=pointer]:
+          - /url: /servicos
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+      - link "Fale com a gente" [ref=e13] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - region "Experiência de quem entende o projeto por dentro." [ref=e16]:
+        - generic [ref=e17]:
+          - heading "Experiência de quem entende o projeto por dentro." [level=1] [ref=e18]:
+            - text: Experiência
+            - text: de quem
+            - text: entende o
+            - text: projeto por
+            - text: dentro.
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: Desde 1998, desenvolvemos soluções eficazes de comunicação para empresas que buscam relevância, posicionamento e conexão com seus públicos. Ao longo dessa trajetória, ampliamos nossa expertise em assessoria de imprensa para diferentes frentes da comunicação, consolidando uma visão estratégica e integrada.
+            - link "Confira nossos cases" [ref=e21] [cursor=pointer]:
+              - /url: /cases
+      - region "Pilares da LINK" [ref=e22]:
+        - generic [ref=e23]:
+          - article [ref=e24]:
+            - heading "Posicionamento" [level=2] [ref=e25]
+            - paragraph [ref=e26]: Acreditamos que comunicação é, antes de tudo, sobre pessoas. É sobre criar conexões, fortalecer relacionamentos e construir experiências relevantes, seja no on ou no off.
+          - article [ref=e27]:
+            - heading "Visão estratégica" [level=2] [ref=e28]
+            - paragraph [ref=e29]: Com um olhar 360°, cuidamos da comunicação das marcas com estratégia, criatividade e coerência, garantindo alinhamento entre posicionamento, narrativa e desdobramentos nos diferentes canais.
+      - region "Fotos da equipe LINK" [ref=e30]:
+        - generic [ref=e31]:
+          - button "Foto anterior" [ref=e32] [cursor=pointer]:
+            - img [ref=e33]
+          - button "Próxima foto" [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+        - region [ref=e38]:
+          - figure [ref=e39]:
+            - img "Equipe da LINK reunida em ambiente de trabalho" [ref=e40]
+          - figure [ref=e41]:
+            - img "Equipe da LINK colaborando no escritorio" [ref=e42]
+          - figure [ref=e43]:
+            - img "Equipe da LINK em reunião no escritorio" [ref=e44]
+          - figure [ref=e45]:
+            - img "Equipe da LINK trabalhando em projeto de comunicação" [ref=e46]
+      - generic [ref=e48]:
+        - heading "Quer conversar sobre os desafios de comunicação da sua organização?" [level=2] [ref=e49]:
+          - generic [ref=e50]: Quer conversar sobre os desafios de
+          - generic [ref=e51]: comunicação da sua organização?
+        - link "Entre em contato" [ref=e52] [cursor=pointer]:
+          - /url: /contato
+  - contentinfo [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - link "LINK comunicação" [ref=e56] [cursor=pointer]:
+          - /url: /
+          - img "LINK comunicação" [ref=e57]
+        - paragraph [ref=e58]: Siga nas redes sociais
+        - generic [ref=e59]:
+          - link "LinkedIn da LINK comunicação" [ref=e60] [cursor=pointer]:
+            - /url: https://www.linkedin.com/
+            - img [ref=e61]
+          - link "Instagram da LINK comunicação" [ref=e65] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+            - img [ref=e66]
+      - navigation "Empresa" [ref=e70]:
+        - heading "Empresa" [level=2] [ref=e71]
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Home" [ref=e74] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e75]:
+            - link "A Empresa" [ref=e76] [cursor=pointer]:
+              - /url: /a-empresa
+          - listitem [ref=e77]:
+            - link "Cases" [ref=e78] [cursor=pointer]:
+              - /url: /cases
+      - navigation "Serviços" [ref=e79]:
+        - heading "Serviços" [level=2] [ref=e80]
+        - list [ref=e81]:
+          - listitem [ref=e82]:
+            - link "Serviços" [ref=e83] [cursor=pointer]:
+              - /url: /servicos
+      - generic [ref=e84]:
+        - heading "Contato" [level=2] [ref=e85]
+        - paragraph [ref=e86]:
+          - link "Fale com a gente" [ref=e87] [cursor=pointer]:
+            - /url: /contato
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - img [ref=e91]
+            - generic [ref=e94]:
+              - text: Rua Buenos Aires, 10 - 4º andar,
+              - text: São Pedro, Belo Horizonte - MG
+          - generic [ref=e95]:
+            - img [ref=e97]
+            - link "(31) 99840-0460" [ref=e99] [cursor=pointer]:
+              - /url: tel:+5531998400460
+          - generic [ref=e100]:
+            - img [ref=e102]
+            - link "recepcao@linkcomunicacao.com.br" [ref=e105] [cursor=pointer]:
+              - /url: mailto:recepcao@linkcomunicacao.com.br
+    - paragraph [ref=e107]: © 2026 LINK comunicação. Todos os direitos reservados.

@@ -28,9 +28,10 @@ export type ServiceOverview = {
 };
 
 const caseAssets = {
-  bamaq: { name: "Bamaq", image: "/imgs/cases/bamaq.png" },
-  imfg: { name: "IMFG", image: "/imgs/cases/imfg.png" },
-  galoInox: { name: "Galo Inox", image: "/imgs/cases/galoinox.png" },
+  bamaq: { name: "Bamaq", image: "/imgs/cases/bamaq.png", href: "/cases/grupo-bamaq" },
+  imfg: { name: "IMFG", image: "/imgs/cases/imfg.png", href: "/cases/imfg" },
+  galoInox: { name: "Galo Inox", image: "/imgs/cases/galoinox.png", href: "/cases/galo-inox" },
+  bhAirport: { name: "BH Airport", image: "/imgs/cases/bhair.png", href: "/cases/bh-airport" },
 } as const satisfies Record<string, RelatedCase>;
 
 export const services = {
@@ -60,7 +61,7 @@ export const services = {
       "Análises de cenário e oportunidades",
       "Monitoramento de imagem e clipping",
     ],
-    relatedCases: [caseAssets.bamaq, caseAssets.imfg, caseAssets.galoInox],
+    relatedCases: [caseAssets.bamaq, caseAssets.imfg, caseAssets.galoInox, caseAssets.bhAirport],
   },
   "comunicacao-interna": {
     slug: "comunicacao-interna",
@@ -185,7 +186,7 @@ export const serviceOverviews: ServiceOverview[] = [
     ],
     cardImage: services["assessoria-de-imprensa"].heroImage,
     cardLines: ["Assessoria de", "Imprensa"],
-    cases: [caseAssets.bamaq, caseAssets.imfg],
+    cases: [caseAssets.bamaq, caseAssets.imfg, caseAssets.galoInox, caseAssets.bhAirport],
   },
   {
     slug: "comunicacao-interna",

@@ -1,0 +1,141 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "LINK comunicação — início" [ref=e6] [cursor=pointer]:
+        - /url: /
+      - navigation "Principal" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "A Empresa" [ref=e9] [cursor=pointer]:
+          - /url: /a-empresa
+        - link "Serviços" [ref=e10] [cursor=pointer]:
+          - /url: /servicos
+        - link "Cases" [ref=e11] [cursor=pointer]:
+          - /url: /cases
+      - link "Fale com a gente" [ref=e13] [cursor=pointer]:
+        - /url: /contato
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - region "Grupo Bamaq" [ref=e16]:
+        - generic [ref=e18]:
+          - link "Voltar" [ref=e19] [cursor=pointer]:
+            - /url: /cases
+            - img [ref=e21]
+            - text: Voltar
+          - generic [ref=e23]:
+            - heading "Grupo Bamaq" [level=1] [ref=e24]
+            - paragraph [ref=e25]: Assessoria de imprensa para reputação, posicionamento e resultado
+      - generic [ref=e28]:
+        - heading "O projeto" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: O Grupo Bamaq, uma das maiores referências do país em automóveis premium, máquinas pesadas e serviços financeiros, buscava fortalecer a presença institucional e comercial de suas diferentes frentes de negócio.
+          - paragraph [ref=e32]: A Link atua na assessoria de imprensa estratégica do grupo, conduzindo um trabalho integrado para as divisões de Automóveis (concessionárias Porsche, GWM e Mercedes-Benz), Máquinas Pesadas e Financeira.
+          - paragraph [ref=e33]: Nosso principal objetivo é ampliar visibilidade, reputação e relevância regional e nacional, garantindo presença qualificada na mídia e fortalecendo o posicionamento das marcas nas cidades em que o grupo atua.
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - heading "O desafio" [level=2] [ref=e38]
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: Em um mercado altamente competitivo, em que a decisão de compra é fortemente influenciada por confiança, reputação e autoridade local, não basta ter presença nacional.
+            - paragraph [ref=e41]: O grande desafio da Bamaq era construir capilaridade de comunicação, conectando a força institucional do grupo às realidades regionais de cada praça.
+            - paragraph [ref=e42]: "A complexidade aumentava pela diversidade das operações: diferentes segmentos, públicos distintos, concessionárias em múltiplas cidades e necessidades específicas por mercado."
+            - paragraph [ref=e43]: "Ou seja: era preciso manter uma narrativa centralizada de marca, sem perder a aderência local."
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - button "Imagem anterior" [ref=e46] [cursor=pointer]:
+              - img [ref=e47]
+            - button "Próxima imagem" [ref=e49] [cursor=pointer]:
+              - img [ref=e50]
+          - generic "Galeria do case" [ref=e52]
+        - generic [ref=e57]:
+          - heading "A solução" [level=2] [ref=e58]
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: A Link estruturou uma atuação de atendimento centralizado com linguagem, tom e mensagens estratégicas próprias para cada divisão, aliada a uma divulgação pulverizada com apoio de correspondentes locais, que conhecem profundamente os mercados regionais.
+            - heading "Nossa atuação" [level=3] [ref=e61]
+            - list [ref=e62]:
+              - listitem [ref=e63]: Planejamento estratégico de imprensa por divisão
+              - listitem [ref=e64]: Regionalização de pautas e narrativas
+              - listitem [ref=e65]: Relacionamento com imprensa nacional e local
+              - listitem [ref=e66]: Ativação de correspondentes regionais
+              - listitem [ref=e67]: Gestão de oportunidades por praça
+              - listitem [ref=e68]: Produção de releases, artigos e posicionamentos
+              - listitem [ref=e69]: Monitoramento contínuo de imagem e presença na mídia
+      - generic [ref=e72]:
+        - heading "Resultado" [level=2] [ref=e73]
+        - generic [ref=e74]:
+          - paragraph [ref=e75]: 945 publicações espontâneas
+          - paragraph [ref=e76]: R$ 10 milhões em retorno de mídia
+          - paragraph [ref=e77]: Ampliação da presença local nas principais praças
+          - paragraph [ref=e78]: Fortalecimento da reputação das marcas representadas
+          - paragraph [ref=e79]: Maior aderência regional da comunicação
+      - region "Veja também" [ref=e81]:
+        - generic [ref=e82]:
+          - heading "Veja também" [level=2] [ref=e83]
+          - paragraph [ref=e84]: "Cases relacionados:"
+          - generic [ref=e85]:
+            - link "IMFG" [ref=e86] [cursor=pointer]:
+              - /url: /cases/imfg
+              - generic [ref=e87]: IMFG
+            - link "Galo Inox" [ref=e88] [cursor=pointer]:
+              - /url: /cases/galo-inox
+              - generic [ref=e89]: Galo Inox
+            - link "BH Airport" [ref=e90] [cursor=pointer]:
+              - /url: /cases/bh-airport
+              - generic [ref=e91]: BH Airport
+      - generic [ref=e93]:
+        - heading "Quer conversar sobre os desafios de comunicação da sua organização?" [level=2] [ref=e94]:
+          - generic [ref=e95]: Quer conversar sobre os desafios de
+          - generic [ref=e96]: comunicação da sua organização?
+        - link "Entre em contato" [ref=e97] [cursor=pointer]:
+          - /url: /contato
+  - contentinfo [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - link "LINK comunicação" [ref=e101] [cursor=pointer]:
+          - /url: /
+          - img "LINK comunicação" [ref=e102]
+        - paragraph [ref=e103]: Siga nas redes sociais
+        - generic [ref=e104]:
+          - link "LinkedIn da LINK comunicação" [ref=e105] [cursor=pointer]:
+            - /url: https://www.linkedin.com/
+            - img [ref=e106]
+          - link "Instagram da LINK comunicação" [ref=e110] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+            - img [ref=e111]
+      - navigation "Empresa" [ref=e115]:
+        - heading "Empresa" [level=2] [ref=e116]
+        - list [ref=e117]:
+          - listitem [ref=e118]:
+            - link "Home" [ref=e119] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e120]:
+            - link "A Empresa" [ref=e121] [cursor=pointer]:
+              - /url: /a-empresa
+          - listitem [ref=e122]:
+            - link "Cases" [ref=e123] [cursor=pointer]:
+              - /url: /cases
+      - navigation "Serviços" [ref=e124]:
+        - heading "Serviços" [level=2] [ref=e125]
+        - list [ref=e126]:
+          - listitem [ref=e127]:
+            - link "Serviços" [ref=e128] [cursor=pointer]:
+              - /url: /servicos
+      - generic [ref=e129]:
+        - heading "Contato" [level=2] [ref=e130]
+        - paragraph [ref=e131]:
+          - link "Fale com a gente" [ref=e132] [cursor=pointer]:
+            - /url: /contato
+        - generic [ref=e133]:
+          - generic [ref=e134]:
+            - img [ref=e136]
+            - generic [ref=e139]:
+              - text: Rua Buenos Aires, 10 - 4º andar,
+              - text: São Pedro, Belo Horizonte - MG
+          - generic [ref=e140]:
+            - img [ref=e142]
+            - link "(31) 99840-0460" [ref=e144] [cursor=pointer]:
+              - /url: tel:+5531998400460
+          - generic [ref=e145]:
+            - img [ref=e147]
+            - link "recepcao@linkcomunicacao.com.br" [ref=e150] [cursor=pointer]:
+              - /url: mailto:recepcao@linkcomunicacao.com.br
+    - paragraph [ref=e152]: © 2026 LINK comunicação. Todos os direitos reservados.

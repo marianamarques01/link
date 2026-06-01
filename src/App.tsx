@@ -4,6 +4,7 @@ import { CaseDetailPage } from "./pages/CaseDetailPage";
 import { CasesPage } from "./pages/CasesPage";
 import { ContatoPage } from "./pages/ContatoPage";
 import { EmpresaPage } from "./pages/EmpresaPage";
+import { NewsPage } from "./pages/NewsPage";
 import { HomePage } from "./pages/HomePage";
 import { ServiceDetailPage } from "./pages/ServiceDetailPage";
 import { ServicosPage } from "./pages/ServicosPage";
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/cases" element={<CasesPage />} />
         <Route path="/cases/:slug" element={<CaseDetailPage />} />
         <Route path="/contato" element={<ContatoPage />} />
+        <Route path="/news" element={<NewsPage />} />
       </Route>
     </Routes>
   );

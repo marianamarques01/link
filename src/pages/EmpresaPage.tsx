@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useCallback, useRef } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FinalCTA } from "../components/services/FinalCTA";
 import "./empresa.css";
 
@@ -10,6 +12,15 @@ const carouselImages = [
 ];
 
 export function EmpresaPage() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scrollCarousel = useCallback((direction: number) => {
+    const node = carouselRef.current;
+    if (!node) return;
+    const amount = Math.min(node.clientWidth * 0.8, 480);
+    node.scrollBy({ left: direction * amount, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="about-page">
       <section className="about-hero" aria-labelledby="about-title">
@@ -64,7 +75,30 @@ export function EmpresaPage() {
       </section>
 
       <section className="about-carousel" aria-label="Fotos da equipe LINK">
-        <div className="about-carousel__track">
+        <div className="about-carousel__controls">
+          <button
+            type="button"
+            className="about-carousel__arrow"
+            aria-label="Foto anterior"
+            onClick={() => scrollCarousel(-1)}
+          >
+            <ChevronLeft aria-hidden size={22} strokeWidth={2.25} />
+          </button>
+          <button
+            type="button"
+            className="about-carousel__arrow"
+            aria-label="Próxima foto"
+            onClick={() => scrollCarousel(1)}
+          >
+            <ChevronRight aria-hidden size={22} strokeWidth={2.25} />
+          </button>
+        </div>
+        <div
+          className="about-carousel__track"
+          ref={carouselRef}
+          role="region"
+          aria-roledescription="carrossel"
+        >
           {carouselImages.map((image) => (
             <figure className="about-carousel__slide" key={image.src}>
               <img src={image.src} alt={image.alt} />
