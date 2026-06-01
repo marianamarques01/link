@@ -1,3 +1,5 @@
+import { publicUrl } from '../utils/publicUrl';
+
 export type RelatedCase = {
   name: string;
   image: string;
@@ -28,10 +30,10 @@ export type ServiceOverview = {
 };
 
 const caseAssets = {
-  bamaq: { name: "Bamaq", image: "/imgs/cases/bamaq.png", href: "/cases/grupo-bamaq" },
-  imfg: { name: "IMFG", image: "/imgs/cases/imfg.png", href: "/cases/imfg" },
-  galoInox: { name: "Galo Inox", image: "/imgs/cases/galoinox.png", href: "/cases/galo-inox" },
-  bhAirport: { name: "BH Airport", image: "/imgs/cases/bhair.png", href: "/cases/bh-airport" },
+  bamaq: { name: "Bamaq", image: publicUrl("/imgs/cases/bamaq.png"), href: "/cases/grupo-bamaq" },
+  imfg: { name: "IMFG", image: publicUrl("/imgs/cases/imfg.png"), href: "/cases/imfg" },
+  galoInox: { name: "Galo Inox", image: publicUrl("/imgs/cases/galoinox.png"), href: "/cases/galo-inox" },
+  bhAirport: { name: "BH Airport", image: publicUrl("/imgs/cases/bhair.png"), href: "/cases/bh-airport" },
 } as const satisfies Record<string, RelatedCase>;
 
 export const services = {
@@ -42,7 +44,7 @@ export const services = {
     introText: [
       "Em um cenário de comunicação em constante evolução, a imprensa - em plataformas digitais ou tradicionais - segue como um dos caminhos mais eficazes para ampliar visibilidade, fortalecer posicionamento e construir reputação. Mais do que divulgar informações, a assessoria de imprensa conecta marcas a pautas relevantes e conversas que realmente importam para a opinião pública.",
     ],
-    heroImage: "/imgs/assessoria_imprensa.png",
+    heroImage: publicUrl("/imgs/assessoria_imprensa.png"),
     heroImageAlt: "Materiais digitais e jornalísticos representando assessoria de imprensa",
     highlight: "Reputação se constrói quando boas histórias encontram os canais certos.",
     workDescription: [
@@ -71,7 +73,7 @@ export const services = {
       "Os colaboradores são os principais porta-vozes de uma empresa e, por isso, a comunicação interna deve receber o mesmo olhar estratégico dedicado aos públicos externos.",
       "Mais do que informar, ela é uma ferramenta essencial para fortalecer a cultura, engajar pessoas, conduzir mudanças e conectar equipes em torno de objetivos comuns.",
     ],
-    heroImage: "/imgs/comunicacao_interna.png",
+    heroImage: publicUrl("/imgs/comunicacao_interna.png"),
     heroImageAlt: "Equipe em ambiente corporativo com peças de comunicação interna",
     highlight: "Culturas fortes nascem de conversas claras, consistentes e humanas.",
     workDescription: [
@@ -98,7 +100,7 @@ export const services = {
       "Mais do que alcance, influência é sobre credibilidade. Construímos campanhas com creators e narrativas que geram identificação real com os públicos.",
       "Da seleção dos perfis à mensuração dos resultados, desenvolvemos ações que fortalecem reputação, relevância e conexão.",
     ],
-    heroImage: "/imgs/marketing_influencia.png",
+    heroImage: publicUrl("/imgs/marketing_influencia.png"),
     heroImageAlt: "Pessoas criando conteúdo para uma ação de marketing de influência",
     highlight: "Influência ganha força quando marca, voz e comunidade compartilham verdade.",
     workDescription: [
@@ -125,7 +127,7 @@ export const services = {
       "Presença digital vai muito além de aparecer com frequência. Ela deve ser relevante, consistente e conectada aos objetivos da marca.",
       "Criamos estratégias de conteúdo alinhadas à jornada do público, transformando informação em relacionamento, autoridade e resultado.",
     ],
-    heroImage: "/imgs/marketing%20conteudo.png",
+    heroImage: publicUrl("/imgs/marketing%20conteudo.png"),
     heroImageAlt: "Peças digitais representando uma estratégia de marketing de conteúdo",
     highlight: "Conteúdo relevante aproxima marcas das conversas que importam.",
     workDescription: [
@@ -152,7 +154,7 @@ export const services = {
       "Em um cenário onde tudo expõe, quem fala importa. O Media Training prepara lideranças para entrevistas, eventos e situações sensíveis, com estratégia e clareza.",
       "Trabalhamos narrativa, postura, linguagem e mensagens-chave para transformar exposição em oportunidade de confiança.",
     ],
-    heroImage: "/imgs/media_training.png",
+    heroImage: publicUrl("/imgs/media_training.png"),
     heroImageAlt: "Porta-voz em preparação para entrevista e comunicação pública",
     highlight: "Boas mensagens ganham potência quando porta-vozes falam com clareza.",
     workDescription: [
@@ -208,7 +210,7 @@ export const serviceOverviews: ServiceOverview[] = [
       "Mais do que alcance, influência é sobre credibilidade. Construímos campanhas com creators e narrativas que geram identificação real com os públicos.",
       "Da seleção dos perfis à mensuração dos resultados, desenvolvemos ações que fortalecem reputação, relevância e conexão.",
     ],
-    cardImage: "/imgs/marketing_influencia.png",
+    cardImage: publicUrl("/imgs/marketing_influencia.png"),
     cardLines: ["Marketing de", "Influência"],
     cases: [caseAssets.galoInox],
   },
@@ -220,7 +222,7 @@ export const serviceOverviews: ServiceOverview[] = [
       "Presença digital não se sustenta apenas com frequência, mas com relevância. Criamos estratégias de conteúdo alinhadas aos objetivos da marca e à jornada do público.",
       "Com planejamento, storytelling e análise de performance, transformamos conteúdo em relacionamento e resultado.",
     ],
-    cardImage: "/imgs/marketing%20conteudo.png",
+    cardImage: publicUrl("/imgs/marketing%20conteudo.png"),
     cardLines: ["Marketing de", "Conteúdo"],
     cases: [caseAssets.bamaq, caseAssets.imfg],
   },
@@ -232,7 +234,7 @@ export const serviceOverviews: ServiceOverview[] = [
       "Em um cenário de alta exposição, cada fala importa. O Media Training prepara lideranças para entrevistas, coletivas, apresentações e momentos de crise.",
       "Trabalhamos narrativa, postura, linguagem e mensagens-chave para transformar a exposição em autoridade e confiança.",
     ],
-    cardImage: "/imgs/media_training.png",
+    cardImage: publicUrl("/imgs/media_training.png"),
     cardLines: ["Media", "Training"],
     cases: [caseAssets.bamaq, caseAssets.galoInox],
   },

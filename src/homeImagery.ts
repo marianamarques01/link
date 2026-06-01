@@ -1,21 +1,23 @@
+import { publicUrl } from "./utils/publicUrl";
+
 /**
  * Contrato de assets da home (`public/` servido como raiz URL).
  * Adicione ficheiros com estes nomes em `public/imgs/` ou ajuste os caminhos.
  * Hero: `public/imgs/home.png` (ajuste aqui para outro asset).
  */
 export const HOME_IMAGES = {
-  heroOffice: "/imgs/home.png",
-  service01: "/imgs/assessoria_imprensa.png",
-  service02: "/imgs/comunicacao_interna.png",
-  service03: "/imgs/marketing_influencia.png",
-  service04: "/imgs/marketing%20conteudo.png",
-  valuesWall: "/imgs/values-link-wall.jpg",
-  caseBamaq: "/imgs/cases/bamaq.png",
-  caseBhAirport: "/imgs/cases/bhair.png",
-  caseGaloInox: "/imgs/cases/galoinox.png",
-  caseImfg: "/imgs/cases/imfg.png",
+  heroOffice: publicUrl("/imgs/home.png"),
+  service01: publicUrl("/imgs/assessoria_imprensa.png"),
+  service02: publicUrl("/imgs/comunicacao_interna.png"),
+  service03: publicUrl("/imgs/marketing_influencia.png"),
+  service04: publicUrl("/imgs/marketing%20conteudo.png"),
+  valuesWall: publicUrl("/imgs/values-link-wall.jpg"),
+  caseBamaq: publicUrl("/imgs/cases/bamaq.png"),
+  caseBhAirport: publicUrl("/imgs/cases/bhair.png"),
+  caseGaloInox: publicUrl("/imgs/cases/galoinox.png"),
+  caseImfg: publicUrl("/imgs/cases/imfg.png"),
   /** Anéis pontilhados do CTA final (um único SVG; só a faixa central é visível no viewBox). */
-  ctaCircleRings: "/imgs/circle.svg",
+  ctaCircleRings: publicUrl("/imgs/circle.svg"),
 } as const;
 
 const CLIENT_LOGO_FILES = [
@@ -47,6 +49,6 @@ const CLIENT_LOGO_FILES = [
 ] as const;
 
 /** Logos de clientes na faixa animada da home (`public/clients/`). */
-export const HOME_CLIENT_LOGOS: readonly string[] = CLIENT_LOGO_FILES.map(
-  (file) => `/clients/${encodeURIComponent(file)}`,
+export const HOME_CLIENT_LOGOS: readonly string[] = CLIENT_LOGO_FILES.map((file) =>
+  publicUrl(`/clients/${encodeURIComponent(file)}`),
 );

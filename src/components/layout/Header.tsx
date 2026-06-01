@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { publicUrl } from "../../utils/publicUrl";
 import "./header.css";
 
 const links = [
@@ -60,7 +61,12 @@ export function Header() {
     >
       <div className="site-header__inner">
         <Link to="/" className="site-header__logo" aria-label="LINK comunicação — início">
-          <img src={isCasesList ? "/logo/logo2.png" : "/logo/image.png"} alt="" width={148} height={100} />
+          <img
+            src={isCasesList ? publicUrl("/logo/logo2.png") : publicUrl("/logo/image.png")}
+            alt=""
+            width={148}
+            height={100}
+          />
         </Link>
 
         <div className="site-header__actions">

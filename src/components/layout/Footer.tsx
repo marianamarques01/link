@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { publicUrl } from "../../utils/publicUrl";
 import "./footer.css";
 
 const navLinks = [
@@ -61,7 +62,7 @@ export function Footer() {
         <div className="site-footer__col site-footer__col--brand">
           <Link to="/" className="site-footer__logo-link">
             <img
-              src="/logo/image.png"
+              src={publicUrl("/logo/image.png")}
               alt="LINK comunicação"
               width={130}
               height={88}

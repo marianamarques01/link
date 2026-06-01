@@ -2,13 +2,26 @@ import { Link } from "react-router-dom";
 import { useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FinalCTA } from "../components/services/FinalCTA";
+import { publicUrl } from "../utils/publicUrl";
 import "./empresa.css";
 
 const carouselImages = [
-  { src: "/imgs/about/img1.png", alt: "Equipe da LINK reunida em ambiente de trabalho" },
-  { src: "/imgs/about/img2.png", alt: "Equipe da LINK colaborando no escritorio" },
-  { src: "/imgs/about/img3.png", alt: "Equipe da LINK em reunião no escritorio" },
-  { src: "/imgs/about/img4.png", alt: "Equipe da LINK trabalhando em projeto de comunicação" },
+  {
+    src: publicUrl("/imgs/about/img1.png"),
+    alt: "Equipe da LINK reunida em ambiente de trabalho",
+  },
+  {
+    src: publicUrl("/imgs/about/img2.png"),
+    alt: "Equipe da LINK colaborando no escritorio",
+  },
+  {
+    src: publicUrl("/imgs/about/img3.png"),
+    alt: "Equipe da LINK em reunião no escritorio",
+  },
+  {
+    src: publicUrl("/imgs/about/img4.png"),
+    alt: "Equipe da LINK trabalhando em projeto de comunicação",
+  },
 ];
 
 export function EmpresaPage() {

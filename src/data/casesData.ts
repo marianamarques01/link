@@ -1,3 +1,5 @@
+import { publicUrl } from '../utils/publicUrl';
+
 export type GalleryImage = string | { src: string; zoom?: boolean };
 
 export type CaseRelated = {
@@ -41,8 +43,8 @@ export const cases = {
     slug: "grupo-bamaq",
     title: "Grupo Bamaq",
     subtitle: "Assessoria de imprensa para reputação, posicionamento e resultado",
-    heroImage: "/imgs/cases/bamaq.png",
-    cardImage: "/imgs/cases/bamaq.png",
+    heroImage: publicUrl("/imgs/cases/bamaq.png"),
+    cardImage: publicUrl("/imgs/cases/bamaq.png"),
     project: {
       title: "O projeto",
       content: [
@@ -50,7 +52,7 @@ export const cases = {
         "A Link atua na assessoria de imprensa estratégica do grupo, conduzindo um trabalho integrado para as divisões de Automóveis (concessionárias Porsche, GWM e Mercedes-Benz), Máquinas Pesadas e Financeira.",
         "Nosso principal objetivo é ampliar visibilidade, reputação e relevância regional e nacional, garantindo presença qualificada na mídia e fortalecendo o posicionamento das marcas nas cidades em que o grupo atua.",
       ],
-      image: "/imgs/cases/bamaq/banner.png",
+      image: publicUrl("/imgs/cases/bamaq/banner.png"),
     },
     challenge: {
       title: "O desafio",
@@ -61,10 +63,10 @@ export const cases = {
         "Ou seja: era preciso manter uma narrativa centralizada de marca, sem perder a aderência local.",
       ],
       images: [
-        "/imgs/cases/bamaq/image.png",
-        "/imgs/cases/bamaq/image2.png",
-        "/imgs/cases/bamaq/image3.png",
-        "/imgs/cases/bamaq/image4.png",
+        publicUrl("/imgs/cases/bamaq/image.png"),
+        publicUrl("/imgs/cases/bamaq/image2.png"),
+        publicUrl("/imgs/cases/bamaq/image3.png"),
+        publicUrl("/imgs/cases/bamaq/image4.png"),
       ],
     },
     solution: {
@@ -91,7 +93,7 @@ export const cases = {
         "Fortalecimento da reputação das marcas representadas",
         "Maior aderência regional da comunicação",
       ],
-      image: "/imgs/cases/bamaq/banner.png",
+      image: publicUrl("/imgs/cases/bamaq/banner.png"),
     },
     relatedCases: ["imfg", "galo-inox", "bh-airport"],
   },
@@ -99,8 +101,8 @@ export const cases = {
     slug: "imfg",
     title: "IMFG",
     subtitle: "Comunicação 360º para consolidar referência no terceiro setor",
-    heroImage: "/imgs/cases/imfg.png",
-    cardImage: "/imgs/cases/imfg.png",
+    heroImage: publicUrl("/imgs/cases/imfg.png"),
+    cardImage: publicUrl("/imgs/cases/imfg.png"),
     project: {
       title: "O projeto",
       content: [
@@ -108,7 +110,7 @@ export const cases = {
         "A Link atua em uma frente de comunicação 360º, integrando estratégia, conteúdo, imprensa, comunicação interna, redes sociais e relacionamento com stakeholders para consolidar o Instituto como referência no terceiro setor no estado.",
         "Nosso objetivo é fortalecer a reputação institucional por meio de uma comunicação clara, humana e estratégica, capaz de evidenciar não apenas os projetos apoiados, mas principalmente as histórias, personagens e transformações geradas.",
       ],
-      image: "/imgs/cases/imfg.png",
+      image: publicUrl("/imgs/cases/imfg.png"),
     },
     challenge: {
       title: "O desafio",
@@ -150,7 +152,7 @@ export const cases = {
         "Alinhamento visual e informacional para todos os públicos estratégicos",
         "Fortalecimento da reputação institucional no terceiro setor",
       ],
-      image: "/imgs/cases/imfg.png",
+      image: publicUrl("/imgs/cases/imfg.png"),
     },
     relatedCases: ["grupo-bamaq", "galo-inox", "bh-airport"],
   },
@@ -158,8 +160,8 @@ export const cases = {
     slug: "galo-inox",
     title: "Galo Inox",
     subtitle: "De monumento a movimento de marca: o lançamento do Galo Inox Aperam",
-    heroImage: "/imgs/cases/galoinox.png",
-    cardImage: "/imgs/cases/galoinox.png",
+    heroImage: publicUrl("/imgs/cases/galoinox.png"),
+    cardImage: publicUrl("/imgs/cases/galoinox.png"),
     project: {
       title: "O projeto",
       content: [
@@ -168,7 +170,7 @@ export const cases = {
         "A Link foi responsável por toda a estratégia de comunicação e lançamento do projeto, desde a criação do naming e posicionamento digital até a construção da narrativa de marca e relacionamento com públicos estratégicos.",
         "O principal objetivo foi conectar emocionalmente a Aperam à torcida do Atlético, reforçando atributos como inovação, resistência, legado e brasilidade do inox.",
       ],
-      image: "/imgs/cases/galoinox/banner.png",
+      image: publicUrl("/imgs/cases/galoinox/banner.png"),
     },
     challenge: {
       title: "O desafio",
@@ -178,10 +180,10 @@ export const cases = {
         "A complexidade também envolvia a necessidade de acompanhar toda a jornada do projeto, desde a produção da obra até sua instalação final, garantindo conteúdo, expectativa e storytelling em todas as fases.",
       ],
       images: [
-        "/imgs/cases/galoinox/image.png",
-        "/imgs/cases/galoinox/image2.png",
-        "/imgs/cases/galoinox/image3.png",
-        "/imgs/cases/galoinox/image4.png",
+        publicUrl("/imgs/cases/galoinox/image.png"),
+        publicUrl("/imgs/cases/galoinox/image2.png"),
+        publicUrl("/imgs/cases/galoinox/image3.png"),
+        publicUrl("/imgs/cases/galoinox/image4.png"),
       ],
     },
     solution: {
@@ -214,7 +216,7 @@ export const cases = {
         "Alta repercussão espontânea na imprensa esportiva e local",
         "Consolidação do monumento como novo ponto turístico da Arena MRV",
       ],
-      image: "/imgs/cases/galoinox/banner.png",
+      image: publicUrl("/imgs/cases/galoinox/banner.png"),
     },
     relatedCases: ["grupo-bamaq", "imfg", "bh-airport"],
   },
@@ -222,8 +224,8 @@ export const cases = {
     slug: "bh-airport",
     title: "BH Airport",
     subtitle: "Comunicação integrada para uma operação de alta visibilidade",
-    heroImage: "/imgs/cases/bhair.png",
-    cardImage: "/imgs/cases/bhair.png",
+    heroImage: publicUrl("/imgs/cases/bhair.png"),
+    cardImage: publicUrl("/imgs/cases/bhair.png"),
     project: {
       title: "O projeto",
       content: [
@@ -231,7 +233,7 @@ export const cases = {
         "A Link assumiu a assessoria de imprensa do aeroporto, com foco em garantir agilidade no atendimento às demandas da mídia, ampla divulgação de informações de interesse público e fortalecimento da imagem institucional.",
         "O objetivo central do projeto foi construir uma percepção contínua de responsabilidade, segurança e confiança junto aos passageiros, imprensa e stakeholders, especialmente durante a alta temporada.",
       ],
-      image: "/imgs/cases/bhair/banner.png",
+      image: publicUrl("/imgs/cases/bhair/banner.png"),
     },
     challenge: {
       title: "O desafio",
@@ -242,10 +244,10 @@ export const cases = {
         "Além disso, havia a necessidade de preparar a marca para situações críticas, em um ambiente onde vazamentos, fake news e pressão da opinião pública podem escalar em minutos.",
       ],
       images: [
-        "/imgs/cases/bhair/image.png",
-        "/imgs/cases/bhair/image2.png",
-        "/imgs/cases/bhair/image3.png",
-        { src: "/imgs/cases/bhair/image4.png", zoom: true },
+        publicUrl("/imgs/cases/bhair/image.png"),
+        publicUrl("/imgs/cases/bhair/image2.png"),
+        publicUrl("/imgs/cases/bhair/image3.png"),
+        { src: publicUrl("/imgs/cases/bhair/image4.png"), zoom: true },
       ],
     },
     solution: {
@@ -278,7 +280,7 @@ export const cases = {
         "Alta capilaridade na imprensa regional e nacional",
         "Fortalecimento do protocolo de comunicação em crise",
       ],
-      image: "/imgs/cases/bhair/banner.png",
+      image: publicUrl("/imgs/cases/bhair/banner.png"),
     },
     relatedCases: ["grupo-bamaq", "imfg", "galo-inox"],
   },

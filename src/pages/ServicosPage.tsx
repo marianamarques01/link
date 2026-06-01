@@ -3,6 +3,7 @@ import { useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { FinalCTA } from "../components/services/FinalCTA";
 import { serviceOverviews } from "../data/servicesData";
+import { publicUrl } from "../utils/publicUrl";
 import "./servicos.css";
 
 function ServiceBlock({
@@ -100,7 +101,7 @@ export function ServicosPage() {
           <div className="services-hero__copy">
             <img
               className="services-hero__seal"
-              src="/imgs/services/image.png"
+              src={publicUrl("/imgs/services/image.png")}
               alt=""
               width={180}
               height={180}
