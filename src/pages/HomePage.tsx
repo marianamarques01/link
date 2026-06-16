@@ -89,11 +89,14 @@ export function HomePage() {
         <div className="hero--landing__bg" aria-hidden>
           <div className="hero--landing__stripe" />
           <div className="hero--landing__photo-wrap">
-            <div
-              className="hero--landing__photo"
-              style={{
-                backgroundImage: `url(${HOME_IMAGES.heroOffice})`,
-              }}
+            <video
+              className="hero--landing__video"
+              src="/04-27_LINK-VIDEO-SITE-1.MOV"
+              autoPlay
+              muted
+              loop
+              playsInline
+              aria-hidden
             />
           </div>
         </div>
@@ -266,14 +269,14 @@ export function HomePage() {
           </div>
           <div className="home-values__media">
             <div className="home-values__media-frame">
-              <img
-                className="home-values__photo"
-                src={HOME_IMAGES.heroOffice}
-                alt=""
-                decoding="async"
-                loading="lazy"
-                width={720}
-                height={960}
+              <video
+                className="home-values__video"
+                src="/04-27_LINK-VIDEO-SITE-2.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-hidden
               />
             </div>
           </div>

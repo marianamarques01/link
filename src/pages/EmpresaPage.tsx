@@ -11,10 +11,6 @@ const carouselImages = [
     alt: "Equipe da LINK reunida em ambiente de trabalho",
   },
   {
-    src: publicUrl("/imgs/about/img2.png"),
-    alt: "Equipe da LINK colaborando no escritorio",
-  },
-  {
     src: publicUrl("/imgs/about/img3.png"),
     alt: "Equipe da LINK em reunião no escritorio",
   },
