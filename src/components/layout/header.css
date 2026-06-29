@@ -125,7 +125,7 @@
   margin: 0;
   padding-top: clamp(1rem, 2.8vw, 1.55rem);
   padding-bottom: clamp(1rem, 2.8vw, 1.55rem);
-  padding-inline-start: var(--home-wide-align-start, var(--space-page));
+  padding-inline-start: var(--home-hero-gutter, var(--space-page));
   padding-inline-end: var(--space-page);
 }
 

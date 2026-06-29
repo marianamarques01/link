@@ -17,11 +17,13 @@ export function FinalCTA() {
       </div>
       <div className="final-cta__inner">
         <h2 className="final-cta__title">
-          <span>Quer conversar sobre os desafios de</span>
-          <span>comunicação da sua organização?</span>
+          Estamos prontos para entender o que a sua marca precisa
+          <span>
+          e construir caminhos juntos.
+          </span>
         </h2>
         <Link to="/contato" className="final-cta__btn">
-          Entre em contato
+          Entre em contato com a gente
         </Link>
       </div>
     </section>

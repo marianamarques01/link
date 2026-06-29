@@ -108,14 +108,13 @@ export function ServicosPage() {
               aria-hidden="true"
             />
             <p>
-              Atuamos em diferentes frentes da comunicação que se complementam e se conectam para
-              responder aos desafios específicos de cada empresa. Da relação com a mídia ao diálogo
-              com os colaboradores e clientes, nosso trabalho é construir posicionamentos
-              consistentes e duradouros.
+              A comunicação de uma empresa acontece em várias frentes e todas elas precisam conversar
+              entre si. Da imprensa ao relacionamento com colaboradores e clientes, trabalhamos para
+              construir posicionamentos consistentes e duradouros.
             </p>
             <p>
-              Desenvolvemos estratégias completas e acompanhamos sua implementação, ajustando rotas
-              sempre que o cenário exige.
+              Criamos estratégias completas e acompanhamos sua implementação, com flexibilidade para
+              ajustar rotas sempre que necessário.
             </p>
           </div>
         </div>

@@ -49,10 +49,12 @@ export function EmpresaPage() {
 
           <div className="about-hero__copy">
             <p>
-              Desde 1998, desenvolvemos soluções eficazes de comunicação para empresas que buscam
-              relevância, posicionamento e conexão com seus públicos. Ao longo dessa trajetória,
-              ampliamos nossa expertise em assessoria de imprensa para diferentes frentes da
-              comunicação, consolidando uma visão estratégica e integrada.
+              Desde 1998, ajudamos empresas a construir relevância, fortalecer posicionamentos e se
+              conectar de forma mais consistente com seus públicos.
+            </p>
+            <p>
+              Com o tempo, expandimos nossa atuação para além da assessoria de imprensa, desenvolvendo
+              uma visão mais ampla, estratégica e integrada da comunicação.
             </p>
 
             <Link className="about-hero__cta" to="/cases">
@@ -67,17 +69,16 @@ export function EmpresaPage() {
           <article className="about-pillar">
             <h2>Posicionamento</h2>
             <p>
-              Acreditamos que comunicação é, antes de tudo, sobre pessoas. É sobre criar conexões,
-              fortalecer relacionamentos e construir experiências relevantes, seja no on ou no off.
+              Acreditamos que comunicação é, antes de tudo, sobre pessoas. Sobre criar conexões reais,
+              fortalecer relacionamentos e construir experiências que fazem sentido. On ou off-line.
             </p>
           </article>
 
           <article className="about-pillar">
             <h2>Visão estratégica</h2>
             <p>
-              Com um olhar 360°, cuidamos da comunicação das marcas com estratégia, criatividade e
-              coerência, garantindo alinhamento entre posicionamento, narrativa e desdobramentos nos
-              diferentes canais.
+              Com um olhar 360° para a comunicação, conectamos estratégia, criatividade e narrativa para
+              manter coerência entre a marca e o que ela quer conectar em diferentes canais.
             </p>
           </article>
         </div>

@@ -183,8 +183,8 @@ export const serviceOverviews: ServiceOverview[] = [
     eyebrow: "Assessoria de imprensa",
     title: services["assessoria-de-imprensa"].description,
     paragraphs: [
-      "Assessoria de imprensa vai além do envio de releases. É sobre identificar boas histórias, transformá-las em pautas relevantes e construir presença qualificada nos veículos certos.",
-      "Da estratégia ao acompanhamento de cobertura, atuamos para posicionar marcas de forma consistente na esfera pública e fortalecer sua credibilidade.",
+      "Assessoria de imprensa não se resume a divulgar informações. É sobre identificar narrativas relevantes, transformá-las em pautas relevantes e construir presença qualificada nos veículos que realmente importam.",
+      "Do planejamento ao acompanhamento de coberturas, atuamos para fortalecer a reputação e a credibilidade das marcas.",
     ],
     cardImage: services["assessoria-de-imprensa"].heroImage,
     cardLines: ["Assessoria de", "Imprensa"],
@@ -219,8 +219,8 @@ export const serviceOverviews: ServiceOverview[] = [
     eyebrow: "Marketing de conteúdo",
     title: "Conteúdo que posiciona, conecta e gera valor.",
     paragraphs: [
-      "Presença digital não se sustenta apenas com frequência, mas com relevância. Criamos estratégias de conteúdo alinhadas aos objetivos da marca e à jornada do público.",
-      "Com planejamento, storytelling e análise de performance, transformamos conteúdo em relacionamento e resultado.",
+      "Mais do que estar presente no digital, é preciso ser relevante. Criamos estratégias de conteúdo conectadas aos objetivos da marca e ao que realmente importa para o público.",
+      "Unimos planejamento, storytelling e análise de performance para transformar conteúdo em relacionamentos e resultados consistentes.",
     ],
     cardImage: publicUrl("/imgs/marketing%20conteudo.png"),
     cardLines: ["Marketing de", "Conteúdo"],

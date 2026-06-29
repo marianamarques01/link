@@ -40,23 +40,23 @@ const HOME_CASES_ITEMS = [
 const DIFERENCIAIS_ITEMS = [
   {
     icon: Newspaper,
-    title: "Imprensa como base",
-    body: "A relação com a mídia continua sendo uma das formas mais sólidas de construir reputação. É a partir dela que entendemos cenário, riscos e oportunidades.",
+    title: "Onde a reputação ganha voz",
+    body: "Construir reputação passa por construir confiança. E poucas ferramentas são tão poderosas para isso quanto uma relação sólida, transparente e estratégica com a imprensa.",
   },
   {
     icon: Copy,
-    title: "Integração real",
-    body: "Planejamos e executamos diferentes ações de comunicação de forma coordenada, evitando ruídos e contradições.",
+    title: "Uma só estratégia, muitas vozes",
+    body: "Quando cada frente de comunicação trabalha em sintonia, a mensagem ganha força. Conectamos ações, alinhamos discursos e garantimos que tudo faça sentido para todos os públicos.",
   },
   {
     icon: Star,
-    title: "Experiência de mercado",
-    body: "Já atuamos em projetos diversos, com desafios reais e contextos complexos.",
+    title: "Experiência que vem da prática",
+    body: "Nossa experiência foi construída a partir de projetos diversos, com desafios reais e contextos complexos.",
   },
   {
     icon: ShieldCheck,
-    title: "Confiança e consistência",
-    body: "Comunicação exige responsabilidade. Trabalhamos com seriedade, discrição e compromisso com resultados duradouros.",
+    title: "Mais do que comunicar, construir confiança",
+    body: "Em comunicação, cada ação deixa uma marca. Por isso, responsabilidade, discrição e compromisso com resultados duradouros são inegociáveis para nós.",
   },
 ] as const;
 
@@ -115,11 +115,8 @@ export function HomePage() {
           </h1>
 
           <p className="hero--landing__sub">
-            28 anos desenvolvendo soluções inovadoras
-            <br />
-            em comunicação para gerar valor
-            <br />
-            pro seu negócio.
+            Desde 1998 criando soluções em comunicação <br />
+            que conectam ideias e fortalecem marcas.
           </p>
 
           <Link className="hero--landing__cta hero--landing__cta--outline" to="/a-empresa">
@@ -147,12 +144,13 @@ export function HomePage() {
           </div>
           <div className="home-intro__col home-intro__col--copy">
             <p className="home-intro__p">
-              Uma entrevista, uma campanha interna, um conteúdo nas redes ou a fala de um porta-voz não
-              existem separadamente. <strong>Tudo impacta a imagem da organização.</strong>
+              Uma entrevista, uma campanha interna, um post nas redes sociais ou a fala de um porta-voz podem
+              parecer ações isoladas. Mas, para quem está do outro lado, tudo faz parte da mesma percepção
+              sobre um negócio.
             </p>
             <p className="home-intro__p">
-              Por isso, nosso trabalho é conectar essas frentes em uma estratégia única, que faça sentido
-              para o momento e para os objetivos do cliente.
+              Por isso, olhamos para a comunicação de forma integrada. Nosso papel é conectar histórias em
+              uma estratégia única, autêntica e que faça sentido para os objetivos do cliente.
             </p>
           </div>
         </div>
@@ -297,8 +295,8 @@ export function HomePage() {
             </div>
             <div className="home-cases__intro-right">
               <p className="home-cases__lead">
-                Cada projeto traz um contexto diferente. Nosso papel é entender o cenário, definir
-                prioridades e executar ações que realmente façam diferença.
+                Cada projeto é único. Nosso papel é transformar cenários complexos em caminhos claros,
+                conectando prioridades e resultados.
               </p>
               <Link to="/cases" className="home-cases__cta">
                 Ver todos
