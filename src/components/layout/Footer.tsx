@@ -53,6 +53,19 @@ function IconInstagram({ className }: { className?: string }) {
   );
 }
 
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/company/link-comunicacao",
+    label: "LinkedIn da LINK comunicação",
+    Icon: IconLinkedIn,
+  },
+  {
+    href: "https://www.instagram.com/linkcomunicacao/",
+    label: "Instagram da LINK comunicação",
+    Icon: IconInstagram,
+  },
+] as const;
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -71,24 +84,18 @@ export function Footer() {
           </Link>
           <p className="site-footer__social-title">Siga nas redes sociais</p>
           <div className="site-footer__social-icons">
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="site-footer__icon-link"
-              aria-label="LinkedIn da LINK comunicação"
-            >
-              <IconLinkedIn />
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="site-footer__icon-link"
-              aria-label="Instagram da LINK comunicação"
-            >
-              <IconInstagram />
-            </a>
+            {socialLinks.map(({ href, label, Icon }) => (
+              <a
+                key={href}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="site-footer__icon-link"
+                aria-label={label}
+              >
+                <Icon />
+              </a>
+            ))}
           </div>
         </div>
 
