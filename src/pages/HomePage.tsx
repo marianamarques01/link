@@ -269,7 +269,7 @@ export function HomePage() {
             <div className="home-values__media-frame">
               <video
                 className="home-values__video"
-                src="/04-27_LINK-VIDEO-SITE-2.mp4"
+                src="/04-27_LINK-VIDEO-SITE-2.MOV"
                 autoPlay
                 muted
                 loop
