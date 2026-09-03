@@ -190,6 +190,22 @@
   color: #000000;
 }
 
+@media (max-width: 768px) {
+  .site-header__inner {
+    padding-inline: var(--space-page);
+  }
+
+  .site-header--home-minimal .site-header__inner {
+    padding-inline-start: var(--home-hero-gutter, var(--space-page));
+    padding-inline-end: var(--space-page);
+  }
+
+  .site-header__actions {
+    margin-inline-end: 0;
+    gap: 0.5rem;
+  }
+}
+
 @media (max-width: 480px) {
   .site-header__nav {
     padding-inline-start: clamp(2.5rem, 18vw, 4.5rem);

@@ -3,6 +3,10 @@
   --site-header-h: clamp(52px, 3.85rem + 0.35vw, 66px);
 }
 
+.site-shell--home {
+  position: relative;
+}
+
 /* Home: barra navega sobre o hero (imagem até ao topo da janela) */
 .site-shell--home .site-header {
   position: fixed;
@@ -11,4 +15,24 @@
   right: 0;
   width: 100%;
   z-index: 50;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --site-header-h: clamp(72px, 5.7rem + 0.5vw, 92px);
+  }
+
+  /* Evita header sticky/fixed sobrepor logo e ícones do footer ao rolar */
+  .site-header {
+    position: relative;
+    top: auto;
+  }
+
+  .site-shell--home .site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
 }
