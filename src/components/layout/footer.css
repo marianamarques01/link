@@ -124,6 +124,7 @@
   font-size: 0.92rem;
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.88);
+  isolation: isolate;
 }
 
 .site-footer__line:last-child {
@@ -135,6 +136,9 @@
   color: rgba(255, 255, 255, 0.7);
   margin-top: 0.18rem;
   display: inline-flex;
+  position: relative;
+  z-index: 1;
+  background: #000000;
 }
 
 .site-footer__text-link {
@@ -147,9 +151,12 @@
 }
 
 .site-footer__mail-link {
+  display: inline;
+  width: auto;
   color: rgba(255, 255, 255, 0.88);
   text-decoration: underline;
   text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
 }
 
 .site-footer__mail-link:hover {
@@ -162,9 +169,20 @@
 
 .site-footer__copyright {
   max-width: 1180px;
-  margin: 0 auto;
+  margin: clamp(2rem, 5vw, 2.75rem) auto 0;
   padding-top: clamp(1.25rem, 3vw, 2rem);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 768px) {
+  .site-footer__icon-link {
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-footer__copyright {
+    margin-top: clamp(2.5rem, 7vw, 3.25rem);
+  }
 }
 
 .site-footer__copyright-text {
